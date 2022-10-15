@@ -1,8 +1,15 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { useSelector, useDispatch } from "react-redux";
+import { logout } from "../../store/authSlice";
+import { NavLink } from "react-router-dom";
+import { IoIosLogOut } from "react-icons/io";
 
 export default function Navbar() {
+   const { user } = useSelector((state) => state.auth);
+   const dispatch = useDispatch();
+
    return (
-      <>
+      <div className='flex items-center justify-between'>
          <ul className='flex justify-center gap-10 text-white/60 text-[15px]'>
             <li className='py-5 cursor-pointer hover:text-white/80 transition-colors'>
                <a href='/'>Home</a>
@@ -83,6 +90,19 @@ export default function Navbar() {
                <a href='/'>Contact</a>
             </li>
          </ul>
-      </>
+         {user ? (
+            <div className='text-white/80 flex items-center gap-5 text-sm'>
+               <span>{user.fullname}</span>
+               <button className='text-xl' onClick={() => dispatch(logout())}>
+                  <IoIosLogOut />
+               </button>
+            </div>
+         ) : (
+            <div className='text-white/80 flex items-center gap-2 text-sm'>
+               <NavLink to='/login'>Login</NavLink>
+               <NavLink to='/register'>Register</NavLink>
+            </div>
+         )}
+      </div>
    );
 }
