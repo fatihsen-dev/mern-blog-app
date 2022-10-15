@@ -1,0 +1,56 @@
+@import url("./tailwind.css");
+@import url("./reset.css");
+
+.navbar-ctnr {
+   background: linear-gradient(rgba(21, 21, 21, 0.92) 100%, rgba(21, 21, 21, 0.92) 100%),
+      url("https://preview.colorlib.com/theme/philosophy/images/hero-bg.jpg.webp");
+   background-size: cover;
+}
+.home-li-menu {
+   transition: 0.3s;
+}
+.sans-font {
+   font-family: "Noto Serif", serif;
+   & > * {
+      font-family: "Noto Serif", serif;
+   }
+}
+.right-dot {
+   position: relative;
+
+   &::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      border-radius: 100%;
+      background-color: rgb(255, 255, 255, 0.5);
+      top: 50%;
+      right: -20px;
+   }
+}
+.right-mini-dot {
+   position: relative;
+
+   &::after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      border-radius: 100%;
+      background-color: rgb(255, 255, 255, 0.5);
+      top: 50%;
+      right: -20px;
+   }
+}
+.text-underline {
+   & > span {
+      border-bottom: 1px solid transparent;
+      transition: 0.5s;
+   }
+   &:hover {
+      & > span {
+         border-bottom: 1px solid rgb(85, 85, 85, 0.2);
+      }
+   }
+}
