@@ -30,7 +30,7 @@ export default function Login() {
             <input type='hidden' name='remember' defaultValue='true' />
             <div className='-space-y-px rounded-md shadow-sm flex flex-col gap-3'>
                <div>
-                  <label htmlFor='email-address' className='text-sm text-gray-700'>
+                  <label htmlFor='email-address' className='text-sm text-white/80'>
                      Email address
                   </label>
                   <input
@@ -38,7 +38,7 @@ export default function Login() {
                      name='email'
                      type='email'
                      required
-                     className='relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
+                     className='relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm'
                      placeholder='Email address'
                      onChange={(e) =>
                         setLoginData({ ...loginData, email: e.target.value })
@@ -46,7 +46,7 @@ export default function Login() {
                   />
                </div>
                <div>
-                  <label htmlFor='password' className='text-sm text-gray-700'>
+                  <label htmlFor='password' className='text-sm text-white/80'>
                      Password
                   </label>
                   <input
@@ -54,7 +54,7 @@ export default function Login() {
                      name='password'
                      type='password'
                      required
-                     className='relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
+                     className='relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm'
                      placeholder='Password'
                      onChange={(e) =>
                         setLoginData({ ...loginData, password: e.target.value })
@@ -63,13 +63,13 @@ export default function Login() {
                </div>
             </div>
             <div className='flex gap-10 items-center'>
-               <NavLink to='/register' className='whitespace-nowrap text-indigo-500'>
+               <NavLink to='/register' className='whitespace-nowrap text-blue-500'>
                   Sign up
                </NavLink>
                <button
                   disabled={!loginData.email || !loginData.password}
                   type='submit'
-                  className='group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white transition-colors group disabled:text-white/50 disabled:bg-indigo-600/80'>
+                  className='group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white transition-colors group disabled:text-white/70 disabled:bg-blue-600/80'>
                   Sign in
                </button>
             </div>
