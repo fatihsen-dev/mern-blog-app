@@ -7,7 +7,7 @@ const blogschema = mongoose.Schema({
    },
    img: {
       type: String,
-      required: true,
+      required: false,
    },
    text: {
       type: String,
@@ -19,7 +19,7 @@ const blogschema = mongoose.Schema({
    },
    tags: {
       type: [{ tagName: String, tagColor: String }],
-      required: true,
+      required: false,
    },
    owner: {
       type: String,
