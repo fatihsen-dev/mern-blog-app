@@ -1,11 +1,13 @@
 export const posts = [
    {
+      name: "John Doe",
       title: "Just a Standard Format Post.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Design", "Photography"],
       date: "December 15, 2017",
    },
    {
+      name: "John Doe",
       title: "10 Interesting Facts About Caffeine.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health"],
@@ -13,6 +15,7 @@ export const posts = [
       image: "https://picsum.photos/id/20/300",
    },
    {
+      name: "John Doe",
       title: "No Sugar Oatmeal Cookies.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Cooking", "Health"],
@@ -20,6 +23,7 @@ export const posts = [
       image: "https://picsum.photos/id/25/300",
    },
    {
+      name: "John Doe",
       title: "What Your Music Preference Says About You and Your Personality.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Music", "Lifestyle"],
@@ -27,6 +31,7 @@ export const posts = [
       image: "https://picsum.photos/id/30/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -34,6 +39,7 @@ export const posts = [
       image: "https://picsum.photos/id/35/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -41,12 +47,14 @@ export const posts = [
       image: "https://picsum.photos/id/40/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
       date: "December 15, 2017",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -54,6 +62,7 @@ export const posts = [
       image: "https://picsum.photos/id/50/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -61,12 +70,14 @@ export const posts = [
       image: "https://picsum.photos/id/55/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
       date: "December 15, 2017",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -74,6 +85,7 @@ export const posts = [
       image: "https://picsum.photos/id/65/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -81,6 +93,7 @@ export const posts = [
       image: "https://picsum.photos/id/70/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
@@ -88,16 +101,27 @@ export const posts = [
       image: "https://picsum.photos/id/75/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
       date: "December 15, 2017",
+      image: "https://picsum.photos/id/75/300",
    },
    {
+      name: "John Doe",
       title: "Visiting Theme Parks Improves Your Health.",
       text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
       tags: ["Health", "Lifestyle"],
       date: "December 15, 2017",
       image: "https://picsum.photos/id/85/300",
+   },
+   {
+      name: "John Doe",
+      title: "Visiting Theme Parks Improves Your Health.",
+      text: "Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo est ad minim elit reprehenderit nisi officia aute incididunt velit sint in aliqua...",
+      tags: ["Health", "Lifestyle"],
+      date: "December 15, 2017",
+      image: "https://picsum.photos/id/90/300",
    },
 ];
