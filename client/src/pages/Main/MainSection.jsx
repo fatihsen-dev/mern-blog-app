@@ -1,6 +1,6 @@
 import React from "react";
-import Post from "../components/MainSectionPosts/Post";
-import { posts } from "../fakeData/Post";
+import Post from "../../components/MainSectionPosts/Post";
+import { posts } from "../../fakeData/Post";
 import { BsArrowLeft, BsArrowRight, BsThreeDots } from "react-icons/bs";
 import { GrFacebookOption, GrTwitter, GrPinterest } from "react-icons/gr";
 import { ImInstagram } from "react-icons/im";
@@ -9,7 +9,7 @@ export default function MainSection() {
    return (
       <div className='w-full bg-light pt-24'>
          <div className='w-full container mx-auto flex flex-col 2xl:px-24'>
-            <div className='grid grid-cols-4 gap-10'>
+            <div className='grid grid-cols-1 gap-10 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 2xl:px-0 xl:px-0 lg:px-0 md:px-5 sm:px-5 px-5'>
                <div className='flex flex-col gap-10'>
                   {posts.map((post, index) => {
                      if (index < 3) {
@@ -44,7 +44,7 @@ export default function MainSection() {
                      }
                   })}
                </div>
-               <div className='flex flex-col gap-10'>
+               <div className='hidden flex-col gap-10 2xl:flex xl:flex lg:flex md:hidden sm:hidden'>
                   {posts.map((post, index) => {
                      if (index > 7 && index < 11) {
                         return (
@@ -61,7 +61,7 @@ export default function MainSection() {
                      }
                   })}
                </div>
-               <div className='flex flex-col gap-10'>
+               <div className='hidden flex-col gap-10 2xl:flex xl:flex lg:hidden md:hidden sm:hidden'>
                   {posts.map((post, index) => {
                      if (index > 11 && index < 15) {
                         return (
@@ -80,7 +80,7 @@ export default function MainSection() {
                </div>
             </div>
             <div className='w-full py-5 my-20 flex justify-center'>
-               <ul className='flex items-center gap-5 font-semibold'>
+               <ul className='flex items-center gap-3 font-semibold 2xl:gap-5 xl:gap-5 lg:gap-5 md:gap-3 sm:gap-3 scale-90 2xl:scale-100 xl:scale-100 lg:scale-100 md:scale-90 sm:scale-90'>
                   <li className='text-xl bg-white p-3 hover:text-white hover:bg-black cursor-pointer transition-colors shadow-md rounded-full'>
                      <BsArrowLeft />
                   </li>
@@ -113,12 +113,12 @@ export default function MainSection() {
          </div>
          <div className='bg-white w-full'>
             <div className='flex flex-col container mx-auto 2xl:px-48 py-20 gap-20'>
-               <div className='flex'>
+               <div className='flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col 2xl:gap-0 xl:gap-0 lg:gap-0 md:gap-20 sm:gap-20 gap-20  2xl:px-0 xl:px-0 lg:px-0 md:px-5 sm:px-5 px-5'>
                   <div className='flex flex-col flex-1 gap-5'>
-                     <span className='text sans-font font-bold text-2xl'>
+                     <span className='text sans-font font-bold text-2xl text-center 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-left'>
                         Popular Posts
                      </span>
-                     <div className='grid grid-cols-2 gap-5'>
+                     <div className='grid grid-cols-1 gap-5 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2'>
                         {posts &&
                            posts.map((post, index) => {
                               if (index > 9) {
@@ -132,10 +132,10 @@ export default function MainSection() {
                                        <div className='flex flex-col gap-1'>
                                           <span className='font-bold'>{post.title}</span>
                                           <span className=' text-xs text-gray'>
-                                             By{" "}
+                                             By
                                              <span className='text-black hover:text-blue-600 cursor-pointer'>
                                                 John Doe
-                                             </span>{" "}
+                                             </span>
                                              on Dec 14, 2017
                                           </span>
                                        </div>
@@ -145,11 +145,11 @@ export default function MainSection() {
                            })}
                      </div>
                   </div>
-                  <div className='flex flex-col flex-[0.5] gap-5 pl-20'>
+                  <div className='flex flex-col flex-[0.5] gap-5 2xl:pl-20 xl:pl-20 lg:pl-10 md:pl-0 items-center 2xl:items-start xl:items-start lg:items-start md:items-start sm:items-start'>
                      <span className='text sans-font font-bold text-2xl'>
                         About Philosophy
                      </span>
-                     <span className='text-black/70 leading-6'>
+                     <span className='text-black/70 leading-6 text-center 2xl:text-start xl:text-start lg:text-start md:text-start sm:text-start'>
                         Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
                         malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.
                         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -166,7 +166,7 @@ export default function MainSection() {
                      </div>
                   </div>
                </div>
-               <div className='flex flex-col justify-center text-center gap-4 px-40'>
+               <div className='flex flex-col justify-center text-center gap-4 2xl:px-40 xl:px-40 lg:px-20 md:px-20 sm:10 px-5'>
                   <span className='text sans-font font-bold text-2xl'>Tags</span>
                   <ul className='flex gap-5 justify-center flex-wrap'>
                      <li className='bg-gray/20 py-1 px-5 rounded-sm font-medium hover:bg-black/90 hover:text-white transition-colors cursor-pointer'>
@@ -205,9 +205,6 @@ export default function MainSection() {
                   </ul>
                </div>
             </div>
-         </div>
-         <div className='bg-[#19191b]'>
-            <div className='flex flex-col container mx-auto 2xl:px-48 py-20 gap-20'></div>
          </div>
       </div>
    );

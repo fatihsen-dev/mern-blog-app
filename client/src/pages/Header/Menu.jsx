@@ -9,7 +9,7 @@ export default function Navbar() {
    const dispatch = useDispatch();
 
    return (
-      <div className='flex items-center justify-between'>
+      <div className='hidden items-center justify-between 2xl:flex xl:flex lg:flex md:flex sm:hidden 2xl:px-0 xl:px-0 lg:px-0 md:px-5 sm:px-5 px-5'>
          <ul className='flex justify-center gap-10 text-white/60 text-[15px]'>
             <li className='py-5 cursor-pointer hover:text-white/80 transition-colors'>
                <a href='/'>Home</a>
