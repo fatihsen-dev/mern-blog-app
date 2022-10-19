@@ -3,12 +3,19 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { ImInstagram, ImPinterest } from "react-icons/im";
 import { AiOutlineSearch } from "react-icons/ai";
 import { HiOutlineMenu } from "react-icons/hi";
+import { useDispatch, useSelector } from "react-redux";
+import { changeMenuStatus } from "../../store/siteSlice";
 
 export default function Logo() {
+   // const { navMenuStatus } = useSelector((state) => state.site);
+   const dispatch = useDispatch();
+
    return (
       <>
          <div className='flex items-center justify-between py-7 2xl:px-0 xl:px-0 lg:px-0 md:px-5 sm:px-5 px-5'>
-            <button className='text-white text-3xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:flex flex'>
+            <button
+               onClick={() => dispatch(changeMenuStatus(true))}
+               className='text-white text-3xl 2xl:hidden xl:hidden lg:hidden md:hidden sm:flex flex'>
                <HiOutlineMenu />
             </button>
             <div className='hidden text-white gap-3 text-xl items-center 2xl:flex xl:flex lg:flex md:flex sm:hidden'>

@@ -59,3 +59,19 @@
       url("https://preview.colorlib.com/theme/philosophy/images/hero-bg.jpg.webp");
    background-size: cover;
 }
+
+body.scrollHidden {
+   overflow: hidden;
+}
+.menu-list {
+   & > input[type="checkbox"] {
+      &:checked + label {
+         & > .menu-icon {
+            transform: rotate(180deg);
+         }
+      }
+   }
+   & > label > .menu-icon {
+      transition: 0.3s;
+   }
+}

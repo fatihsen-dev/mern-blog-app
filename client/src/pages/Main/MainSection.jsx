@@ -1,5 +1,6 @@
 import React from "react";
 import Post from "../../components/MainSectionPosts/Post";
+import MobileMenu from "../MobileMenu";
 import { posts } from "../../fakeData/Post";
 import { BsArrowLeft, BsArrowRight, BsThreeDots } from "react-icons/bs";
 import { GrFacebookOption, GrTwitter, GrPinterest } from "react-icons/gr";
@@ -206,6 +207,7 @@ export default function MainSection() {
                </div>
             </div>
          </div>
+         <MobileMenu />
       </div>
    );
 }
